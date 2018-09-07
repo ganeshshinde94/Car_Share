@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PHPMailer</title>
+  </head>
+  <body>
+    <h2>PHPMailer Instructions</h2>
+    <pre>
+      Go to Ubuntu server and into the folder where you want to install PHPMailer
+      Go to the site https://github.com/PHPMailer/PHPMailer
+      From down there on this page copy the command "composer require phpmailer/phpmailer"
+      You will get phpmailer
+
+      Now copy the "a sample example" from the above site and put it into index.php
+
+      Now go to home page of https://app.sendgrid.com/guide/integrate/langs/smtp/verify
+      create an account select the optopn smtp get a username and password and put
+      the details in index.php like
+      1- $mail->Host = 'smtp.sendgrid.net';
+      2- $mail->Username = 'apikey';
+      3- $mail->Password = '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';                           // SMTP password
+
+      Instead the mailer of your website hosting can also be used
+
+      add to from message etc and here you go...
+
+    </pre>
+  </body>
+</html>
